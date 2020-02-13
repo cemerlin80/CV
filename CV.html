@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <!-- Icones pour github et linkedin -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/Style.css">
+    <title>CVCédricMerlin</title>
+</head>
+
+
+<body>
+
+    <!-- scrollspy -> permet de scroller avec un effet -->
+    <!-- Fixer la navbar dans le header -->
+    <div class="scrollspy" id="accueil">
+        <div class="navbar-fixed">
+            <nav class="grey lighten-1">
+                <div class="nav-wrapper blue-grey darken-2">
+                    <a href="#" class="brand-logo white-text">
+                        <i class="material-icons">code</i></a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-nav"><i class="material-icons">menu</i></a>
+
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="https://www.linkedin.com/in/c%C3%A9dric-merlin-670867177/"
+                                class="fab fa-linkedin"></a></li>
+                        <li><a href="https://github.com/cemerlin80" class="fab fa-github"></a></li>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#formations">Formations</a></li>
+                        <li><a href="#technologies">Technologies</a></li>
+                        <li><a href="#compétences">Compétences</a></li>
+                        <li><a href="#expériences">Expériences</a></li>
+                        <!-- <li><a href="">Mes créations</a></li> -->
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Navbar responsive caché , côté gauche -->
+
+        <ul class="sidenav #455a64 blue-grey darken-2" id="mobile-nav">
+            <li><a class="white-text" href="#accueil">Accueil</a></li>
+            <li><a class="white-text" href="#formations">Formations</a></li>
+            <li><a class="white-text" href="#technologies">Technologies</a></li>
+            <li><a class="white-text" href="#compétences">Compétences</a></li>
+            <li><a class="white-text" href="#expériences">Expériences</a></li>
+            <li><a class="white-text" href="#contact">Contact</a></li>
+
+        </ul>
+    </div>
+
+
+    <!-- Ajouter la navbar mobile ! en responsive mobile -->
+    <section>
+
+        <!-- Slider -> images qui défilent avec titre , left caption = titre à gauche ... -->
+
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="assets/images/computer.jpg"> <!-- random image -->
+                    <div class="caption center-align">
+                        <b>
+                            <h3 class="light white-text text-lighten-3">Bonjour c'est Cédric</h3>
+                        </b>
+                        <h5 class="light white-text text-lighten-3">Bienvenue sur mon CV numérique !</h5>
+                        <img class="circle" src="assets/images/moi.jpg" style="width: 20%;">
+                        <!-- Mettre ma photo ici -->
+                    </div>
+                </li>
+                <li>
+                    <img src="assets/images/pexels.jpeg"> <!-- random image -->
+                    <div class="caption left-align">
+                        <h3>Développeur web junior</h3>
+                        <h5 class="light grey-text text-lighten-3 left-align">« Autonome, rigoureux et passionné, <br>
+                            je suis à la recherche d'un stage de développeur web. <br>
+                            Je saurai mettre à profit toutes mes compétences et mes qualités pour votre
+                            entreprise. »</h5>
+                        <a class="btn waves-effect waves-light btn z-depth-5" href="CVMerlinCédric.pdf"
+                            download="CVMerlinCédric.pdf" class="button1">Télécharger mon CV</a>
+                    </div>
+                </li>
+                <li>
+                    <!-- Changer l'image , mettre une image plus clair ! -->
+                    <img src="assets/images/pexels2.jpeg"> <!-- random image -->
+                    <div class="caption right-align">
+                        <h3></h3>
+                        <h6 class="light white-text right-align">Si vous ne réussissez pas du premier
+                            coup, appelez ça « version 1.0 ».</h6>
+                        <!-- Modal Trigger -->
+                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">A propos</a>
+                        <!-- Modal Structure -->
+                       
+                    </div>
+                    <div id="modal1" class="modal" style="height: 18em;";>
+                        <div class="modal-content black  cyan-text">
+                            <h4 class="center-align">Profil</h4>
+                            <p>Cédric Merlin</p>
+                            <p>29 ans</p>
+                            <p>Mobile</p>
+                            <p>Disponible</p>
+                            <p>Apprenti développeur web , à l'AFPA d'Amiens.</p>
+                            <p>Passionné par la réalisation et le développement de projet web, je
+                                me suis tout naturellement tourné vers une carrière de développeur web.</p>
+                            <p>Je désire confirmer mes compétences et les mettre en pratique en
+                                création et développement de sites web.</p>
+                            <p>Volontaire, autonome ayant le goût de l'initiative et du
+                                challenge, j'aime travailler en équipe. </p>
+                        </div>
+                        <div class="modal-footer black">
+                            <a href="#!"
+                                class="modal-close waves-effect waves-green btn-flat white-text">Quitter</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- section Formations , diplômes -->
+    <div class="section grey lighten-2">
+        <div id="formations" class="section scrollspy">
+            <div class="row container">
+                <h2 class="header center-align">Formations</h2>
+                <!-- <div class="col s12 m12 l12"> -->
+                <hr>
+                <!-- Icones section -->
+                <!-- <div class="row"> -->
+                    <div class="col s12 m6 l3">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text">
+                                <i class="material-icons">school</i><br>
+                                <!-- Material icones -> icones sur materialize -->                          
+                                <!-- Ajouter un modal pour chaque bloque , pour cacher le texte , et mettre "détails" sur le modal ! -->
+                            </h2>                         
+                            <b><h5 class="center black-text">Titre professionnel "Développeur web et web mobile"</h5> </b>                          
+                            <b><p class="light">"AFPA"</p></b>                                                          
+                            <b><p>2019/2020</p></b>                                                        
+                            <b><p>Formation de 9 mois</p></b>                                                       
+                            <b><p>Amiens</p> </b>                                                        
+                            <span>Développer la partie front-end d’une application web ou
+                                web mobile en intégrant les recommandations de
+                                sécurité </span><br> <br>                                                                       
+                            <span>Développer la partie back-end d’une application web
+                                ou web mobile en intégrant les recommandations de
+                                sécurité</span>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text">
+                                <i class="material-icons">school</i> </h2>                                                
+                                <b><h5 class="center black-text"> Formation développeur C#.net</h5></b>                                                            
+                            <b><p class="light">"La MANU"</p></b>                                                         
+                            <b><p>2019</p></b>                                                         
+                            <b><p>Formation de 3 mois</p></b>                                                         
+                            <b><p>Amiens</p></b>                                                      
+                            <span>Découverte du langage C# </span><br>                                                     
+                            <span>Mise en place d’un serveur de base de données </span><br>                                                     
+                            <span>Programmation orientée objet et MVC</span> <br>                                                     
+                            <span>Utilisation de C# pour développer des clients lourds. </span><br>                                                     
+                            <span>Utilisation des langages suivants : HTML/CSS et Javascript </span>                          
+                        </div>
+                    </div>
+                    <div class="col s12 m12 training-separator-m"></div>
+                    <div class="col s12 m6 l3">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text">
+                                <i class="material-icons">school</i>
+                            </h2>
+                            <h5 class="center black-text">BAC professionnel "Micro réseau , installation et  maintenance"</h5>                                                          
+                            <b><p class="light">Lycée professionnel "Edouard Branly"</p></b>                                                     
+                            <b><p>2010</p></b>                                                      
+                            <b><p>Obtention</p></b>                                                         
+                            <b><p>Amiens</p></b>                                                        
+                            <span>Installation : pose et test du câblage, mise en place des matériels sur site,  implantation des logiciels d’exploitation.</span><br>                                                        
+                            <span>Mise en service : installation des logiciels d’application, puis vérification du bon  fonctionnement de l’ensemble. </span><br>                                                                                  
+                            <span>Configuration et maintenance des PC. </span> <br>                                                   
+                            <span>Introduction aux routeurs , et Configuration des routeurs.</span> <br>                                                     
+                            <span>Interconnexion de réseaux TCP/IP</span>                           
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l3">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text">
+                                <i class="material-icons">school</i>
+                            </h2>
+                            <h5 class="center black-text">Brevet d'études professionnelles électronique</h5>                                                      
+                            <b><p class="light">Lycée professionnel "Edouard Branly"</p></b>                                                        
+                            <b><p>2008</p></b>                                                         
+                            <b><p>Obtention</p></b>                                                        
+                            <b><p>Amiens</p></b>                                                        
+                            <span>Production d'une maquette d'un objet technique réalisée à partir d'un cachier des charges</span><br>                                                                               
+                            <span>Analyse des structures électronique de l'objet.</span><br>                                                   
+                            <span>Réaliser un typon et souder des composants</span><br>                                                      
+                            <span>Fabrication de la maquette.</span><br>                                                   
+                            <span>Utilisation d'appareil de mesures pour tester l'objet électronique</span><br>                                                     
+                            <span>Lire un schéma stucturel et le plan d'implantation des composants.</span>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de section formations -->
+
+    <!-- <div class="parallax-container ">
+            <div class="parallax"><img src=""></div> -->
+    <div class="section grey">
+        <div id="technologies" class="section scrollspy">
+            <div class="row container">
+                <h2 class="header center-align">Technologies</h2>
+                <hr>
+                <p class="grey-text text-darken-3 lighten-3"></p>
+                <div class="col-s12 m6 l4">
+                    <!-- Langages web -->
+                    <div class="col s12 m6 l4">
+                        <h5><b>Langages web</b></h5>
+
+                        <div>
+                            <img src="assets/images/html.png" alt="HTML" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_border</i>
+
+                        </div>
+                        <div>
+                            <img src="assets/images/css.png" alt="CSS" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_half</i>
+                            <i class="material-icons small">star_border</i>
+
+                        </div>
+                        <div>
+                            <img src="assets/images/js.png" alt="JS" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_half</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+
+                        </div>
+                        <div>
+                            <img src="assets/images/php.png" alt="PHP" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+
+                        </div>
+                        <div>
+                            <img src="assets/images/HeidiSQL-logo.png" alt="SQL" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+
+                        </div>
+                        <div>
+                            <img src="assets/images/c-sharp2.png" alt="C#" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+
+                    <div class="col s12 m6 l4">
+                        <h5><b>Frameworks</b></h5>
+                        <br>
+                        <div>
+                            <img src="assets/images/Bootstrap.png" alt="Bootstrap" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_half</i>
+                            <i class="material-icons small">star_border</i>
+
+                        </div>
+                        <div>
+                            <img src="assets/images/Materialize.png" alt="Materialize" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_half</i>
+                            <i class="material-icons small">star_border</i>
+
+                        </div>
+                        <div>
+                            <img src="assets/images/jQuery.png" alt="jQuery" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_half</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+
+                        </div>
+                        <div>
+                            <img src="assets/images/CodeIgniter.png" alt="CodeIgniter" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+
+                        </div>
+                        <div>
+
+                            <img src="assets/images/Vuejs2.png" alt="VueJs" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+
+                        </div>
+                        <div>
+
+                            <img src="assets/images/asp.net.jpg" alt="ASP" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+
+                        </div>
+                    </div>
+                    <!-- Outils -->
+
+                    <div class="col s12 m6 l4">
+                        <h5><b>Outils</b></h5>
+                        <div>
+                            <img src="assets/images/Visual_Studio_Code.png" alt="VisualStudioCode" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+
+                        </div>
+                        <br>
+                        <div>
+                            <img src="assets/images/MariaDB.png" alt="mariadDB" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_half</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+
+                        </div>
+                        <div>
+                            <img src="assets/images/gitbash.png" alt="gitBash" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_half</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+
+                        </div>
+                        <div>
+                            <img src="assets/images/WampServer.png" alt="WampServer" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+
+                        </div>
+                        <br>
+                        <div>
+                            <img src="assets/images/PhpMyAdmin.png" alt="PhpMyAdmin" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_half</i>
+                            <i class="material-icons small">star_border</i>
+
+                        </div>
+                        <br>
+                        <div>
+                            <img src="assets/images/jMerise.jpg" alt="jMerise" style="width: 20%;">
+
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star</i>
+                            <i class="material-icons small">star_half</i>
+                            <i class="material-icons small">star_border</i>
+                            <i class="material-icons small">star_border</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Compétences suite -->
+    <div class="section cyan darken-3">
+        <div id="compétences" class="section scrollspy">
+            <div class="row container">
+                <h2 class="header center-align white-text">Compétences</h2>
+                <hr>
+                <br>
+                <!-- Cards compétences -->
+                <!-- Card1 Front-end-->
+                <div class="col s12 m6 l3">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/dev.jpg">
+                        </div>
+                        <div class="card-content">
+                            <b><span class="card-title activator text-darken-4">Front-end<i
+                                        class="material-icons right">remove_red_eye</i></span></b>
+                        </div>
+                        <div class="card-reveal teal lighten-2">
+                            <span class="card-title grey-text text-darken-4">Front-end<i
+                                    class="material-icons right">close</i></span>
+                            <p>Développer la partie front-end d’une application web ou
+                                web mobile en intégrant les recommandations de
+                                sécurité</p>
+                            <p>
+                                Réalisation d'une interface utilisateur web statique et adaptable en responsive.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card2 Back-end-->
+                <div class="col s12 m6 l3">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/dev.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Back-end<i
+                                    class="material-icons right">remove_red_eye</i></span>
+                        </div>
+                        <div class="card-reveal teal lighten-2">
+                            <span class="card-title grey-text text-darken-4">Back-end<i
+                                    class="material-icons right">close</i></span>
+                            <p>Développer la partie back-end d’une application web
+                                ou web mobile en intégrant les recommandations de
+                                sécurité</p>
+                            <p>
+                                Apprentissage de PHP
+                            </p>
+                            <p>
+                                Utilisation du CRUD.
+                            </p>
+                            <p>
+                                Connexion aux bases de données avec PDO , en PHP.
+                            </p>
+                            <p>
+                                Formulaires , et récupération des données d'un formulaire via des méthodes (POST).
+                            </p>
+                            <p>
+                                Gestion des données sur un serveur.
+                            </p>
+                            <p>
+                                Création de session , et mise en place de système d'authentification.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card3 Base de données-->
+                <div class="col s12 m6 l3">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/dev.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">BDD<i
+                                    class="material-icons right">remove_red_eye</i></span>
+                        </div>
+                        <div class="card-reveal teal lighten-2">
+                            <span class="card-title grey-text text-darken-4">Base de données<i
+                                    class="material-icons right">close</i></span>
+                            <p>Création d'une base de données</p>
+                            <p>Développement des composants d'accès aux données</p>
+                            <p>Manipuler les données -> Select, insert, update, delete</p>
+                            <p>Formaliser des requêtes SQL</p>
+                            <p>Ajouter des vues et des procédures stockées</p>
+                            <p>Ajouter des droits d'accès aux utilisateurs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card4 Programmation orientée objet-->
+                <div class="col s12 m6 l3">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/dev.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">MVC<i
+                                    class="material-icons right">remove_red_eye</i></span>
+                        </div>
+                        <div class="card-reveal teal lighten-2">
+                            <span class="card-title grey-text text-darken-4">Programmation orientée objet<i
+                                    class="material-icons right">close</i></span>
+                            <p>Bases de la Programmation orientée objet : Classes, attributs, méthodes.</p>
+                            <p>
+                                Les principes de la Programmation orientée objet : Constructeur, Méthodes, Vues.
+                            </p>
+                            <p>
+                                Initiation au framework : CodeIgniter.
+                            </p>
+                            <p>
+                                Projet de site e-commerce avec le modèle MVC , en CodeIgniter.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card5 UML-->
+                <div class="col s12 m6 l3">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/dev.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">UML<i
+                                    class="material-icons right">remove_red_eye</i></span>
+                        </div>
+                        <div class="card-reveal teal lighten-2">
+                            <span class="card-title grey-text text-darken-4">UML<i
+                                    class="material-icons right">close</i></span>
+                            <p>
+                                Elaborer un dictionnaire de données.
+                            </p>
+                            <p>Modélisation UML.</p>
+                            <p>
+                                Construire le schéma entité-association avec jMerise.
+                            </p>
+                            <p>
+                                Construire le schéma physique.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card6 Projet-->
+
+                <div class="col s12 m6 l3">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/dev.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Projet<i
+                                    class="material-icons right">remove_red_eye</i></span>
+                        </div>
+                        <div class="card-reveal teal lighten-2">
+                            <span class="card-title grey-text text-darken-4">Projet<i
+                                    class="material-icons right">close</i></span>
+                            <p>Respecter le cahier des charges</p>
+
+                            <p>
+                                Création d'une base de données en respectant le cahier des charges
+                            </p>
+                            <p>
+                                Création d'un site e-commerce en utilisant le modèle MVC
+                            </p>
+                            <p>
+                                Bonnes pratiques de sécurité
+                            </p>
+                            <p>
+                                Héberger un site
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card7 CMS-->
+                <div class="col s12 m6 l3">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/dev.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">CMS<i
+                                    class="material-icons right">remove_red_eye</i></span>
+                        </div>
+                        <div class="card-reveal teal lighten-2">
+                            <span class="card-title grey-text text-darken-4">CMS<i
+                                    class="material-icons right">close</i></span>
+                            <p>Découverte de wordpress et Prestashop</p>
+                            <p>
+                                Développer des modules complémentaires.
+                            </p>
+                            <p>
+                                Personnaliser et paramétrer une solution CMS/E-commerce.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card8 Vue.js-->
+
+                <div class="col s12 m6 l3">
+                    <div class="card hoverable">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="assets/images/dev.jpg">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Vues.js<i
+                                    class="material-icons right">remove_red_eye</i></span>
+                        </div>
+                        <div class="card-reveal teal lighten-2">
+                            <span class="card-title grey-text text-darken-4">Vue.js<i
+                                    class="material-icons right">close</i></span>
+                            <p>Afficher une liste d'éléments.</p>
+                            <p>
+                                Afficher le détail d'un élément.
+                            </p>
+                            <p>
+                                Ajouter,modifier,supprimer un élément.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="assets/images/pexels.jpeg"></div>
+    </div>
+
+    <!-- Expériences pro -->
+    <!-- Collapse , accordéon -->
+    <div class="section blue-grey darken-2">
+        <h1 class="center white-text">Expériences professionnelles</h1>
+        <div id="expériences" class="section scrollspy">
+            <div class="row container">
+                <div class="col s12 m9 l10">
+                    <ul class="collapsible center-align">
+                        <li>
+                            <div class="collapsible-header black-text center-align"><i
+                                    class="material-icons">work</i><b>2016-2018</b></div>
+                            <div class="collapsible-body white-text"><b>
+                                </b>
+                                <b>
+                                    <p>Agent de production</p>
+                                </b>
+                                <b>
+                                    <p>Whirlpool</p>
+                                </b>
+                                <b>
+                                    <p>Amiens</p>
+                                </b>
+                                <p>Mission longue en intérim : </p>
+                                <p>Montage et assemblage de pièces d'usinages sur ligne de production</p>
+                                <p>Effectuer les réglages nécessaires</p>
+                                <p>Fixer les pièces ou les outils</p>
+                                <p>Travail en équipe</p>
+                                <p>Respect des consignes de sécurité</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header black-text"><i class="material-icons">work</i><b>2016</b>
+                            </div>
+                            <div class="collapsible-body white-text">
+                                <b>
+                                    <p>Préparateur de commandes</p>
+                                </b>
+                                <b>
+                                    <p>Carrefour Market</p>
+                                </b>
+                                <b>
+                                    <p>Amiens</p>
+                                </b>
+                                <p>Rassemblement des produits commandés</p>
+                                <p>Emballage et garnissage des produits</p>
+                                <p>Contrôle de la conformité des produits à livrer</p>
+                                <p>Travail en équipe</p>
+                                <p>Respect des délais et des consignes de sécurité</p>
+                                <p>Palettisation</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header black-text"><i class="material-icons">work</i><b>2015</b>
+                            </div>
+                            <div class="collapsible-body white-text">
+                                <b>
+                                    <p>Préparateur de commandes</p>
+                                </b>
+                                <b>
+                                    <p>Easy logistique</p>
+                                </b>
+                                <b>
+                                    <p>Amiens</p>
+                                </b>
+                                <p>Rassemblement des produits commandés</p>
+                                <p>Emballage et garnissage des produits</p>
+                                <p>Contrôle de la conformité des produits à livrer</p>
+                                <p>Travail en équipe</p>
+                                <p>Respect des consignes de sécurité</p>
+                                <p>Palettisation</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header black-text"><i class="material-icons">work</i><b>2014</b>
+                            </div>
+                            <div class="collapsible-body white-text">
+                                <b>
+                                    <p>Agent de conditionnement</p>
+                                </b>
+                                <b>
+                                    <p>Clarins</p>
+                                </b>
+                                <b>
+                                    <p>Longueau</p>
+                                </b>
+                                <p>Conditionnement de produits cosmétiques sur ligne de production (produits finis,
+                                    coffret, remplissage, etc.)</p>
+                                <p>Contrôle de la conformité des produits à livrer</p>
+                                <p>Travail en équipe</p>
+                                <p>Respect des consignes de sécurité</p>
+                                <p>Palettisation</p>
+                                <p>Etiquettage</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header black-text"><i
+                                    class="material-icons">work</i><b>2012-2013</b></div>
+                            <div class="collapsible-body white-text">
+                                <b>
+                                    <p>Préparateur de commandes</p>
+                                </b>
+                                <b>
+                                    <p>Auchan logistique</p>
+                                </b>
+                                <b>
+                                    <p>Amiens</p>
+                                </b>
+                                <p>Mission longue en intérim</p>
+                                <p>Rassemblement des produits commandés</p>
+                                <p>Emballage et garnissage des produits</p>
+                                <p>Contrôle de la conformité des produits à livrer</p>
+                                <p>Travail en équipe</p>
+                                <p>Respect des délais et des consignes de sécurité</p>
+                                <p>Palettisation</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header black-text"><i class="material-icons">work</i><b>2010</b>
+                            </div>
+                            <div class="collapsible-body white-text">
+                                <b>
+                                    <p>Stagiaire technicien réseau</p>
+                                </b>
+                                <b>
+                                    <p>DSI CHU nord</p>
+                                </b>
+                                <b>
+                                    <p>Amiens</p>
+                                </b>
+                                <p>Installation d'équipements informatique ou de réseaux</p>
+                                <p>Mise en service et maintenance d'équipements réseaux</p>
+                                <p>Préparation du matériel de réseaux</p>
+                                <p>Configuration de routeurs</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collapsible-header black-text"><i class="material-icons">work</i><b>2009</b>
+                            </div>
+                            <div class="collapsible-body white-text">
+                                <b>
+                                    <p>Stagiaire en technicien maintenance informatique</p>
+                                </b>
+                                <b>
+                                    <p>DSI CHU nord</p>
+                                </b>
+                                <b>
+                                    <p>Amiens</p>
+                                </b>
+                                <p>Détecter une panne</p>
+                                <p>Etablir un diagnostic</p>
+                                <p>Remplacement de matériels informatique</p>
+                                <p>Installation de matériels</p>
+                                <p>Assurer l'entretien et la réparation des matériels informatique</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="assets/images/pexels2.jpeg"></div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer blue-grey darken-1">
+        <div class="container">
+            <div class="row">
+                <div id="contact" class="section scrollspy">
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <b>
+                                <h6 class="center white-text">Langages utilisés :</h6>
+                            </b>
+                            <b>
+                                <p> HTML,CSS, javaScript</p>
+                            </b>
+                            <b>
+                                <h6 class="center white-text">Frameworks :</h6>
+                            </b>
+                            <b>
+                                <p>jQuery,Materialize</p>
+                            </b>
+                            <b>
+                                <h6 class="center white-text">CV réalisé par Cédric Merlin</h6>
+                            </b>
+                        </div>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="col s12 m4">
+                        <div class="icon-block">
+                            <h4 class="center white-text">Contact</h4>
+                            <h5><i class="material-icons blue-text center-align">location_on</i> 7 rue des
+                                Riez<br>80000<br>Amiens</h5>
+                            <h5><i class="material-icons blue-text">call</i> 06.10.38.63.08</h5>
+                            <!-- <h5><i class="material-icons blue-text">email</i> cemerlin@outlook.fr </h5> -->
+                        </div>
+                    </div>
+
+                    <!-- Réseaux -->
+                    <div class="col s12 m4 l3">
+                        <div class="icon-block">
+                            <h4 class="center-align white-text">Réseaux</h4>
+                            <h5><a href="https://www.linkedin.com/in/c%C3%A9dric-merlin-670867177/"
+                                    class="fab fa-linkedin"></a></h5>
+                            <h5><a href="https://github.com/cemerlin80" class="fab fa-github"></a></h5>
+                            <h5><i class="material-icons"><a href="mailto:cemerlin@outlook.fr">mail</a></i></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="footer-copyright">
+            <div class="container">
+
+                <b>
+                    <p> Merci de votre visite</p>
+                </b>
+                <b>
+                    <p>A bientôt !</p>
+                </b>   
+                <p class="grey-text text-lighten-4 right" href="#!">Tout droit réservés</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
+        </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--JavaScript at end of body for optimized loading-->
+
+    <script type="text/javascript" src="assets/js/cv.js"></script>
+
+</body>
+
+</html>

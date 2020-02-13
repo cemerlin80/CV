@@ -1,0 +1,201 @@
+
+header
+/* {
+  background-image:url("../images/loading2.gif");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+} */
+
+/* Navbar */
+
+/* Animation , effet de surligné sous la navbar , fonctionne presque ! */
+li{display:inline-block;min-width:50px;}
+li a {
+    text-decoration:none;
+    line-height: 70px;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 1.3em;
+    color: #444444;
+    text-transform: uppercase;
+    font-family: fantasy;
+    
+}
+li a:after {
+    content: '';
+    display: block;
+    margin: 0px;
+    height: 1px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+li a:hover:after {
+    width: 90%;
+    background: teal;
+}
+
+/* Navbar */
+
+.icon-block
+{
+  padding: 0 15px;
+}
+
+.icon-block .material-icons
+{
+  font-size: inherit;
+}
+
+nav.logo
+{
+  margin-left: 50px;
+}
+
+.sidenav li a
+{
+  font-family: fantasy;
+}
+
+/* Body */
+ /* slide */
+
+ .slider ul li 
+ {
+  font-family: 'Righteous', cursive;
+
+ }
+ 
+ #modal1 p
+ {
+   color: cyan;
+ }
+/* body
+{
+    background-image:url("../images/img2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+h1 {
+  color: white;
+  text-align: center;
+  /* animation-duration: 3s;
+  animation-name: slidein;
+  
+}
+  
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+    }
+  
+    to {
+      margin-left: 0%;      
+    } */
+  }
+
+  h2
+{
+  color: white;
+  /* animation-duration: 3s;
+  animation-name: slidein;
+}
+ 
+@keyframes slidein {
+  from {
+    margin-bottom: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-bottom: 0%;
+    width: 100%;
+  } */
+}
+  
+  h3
+  {
+    color: white;
+  }
+   
+  @keyframes slidein {
+    from {
+      margin-bottom: 100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-bottom: 0%;
+      width: 100%;
+    }
+  }
+
+  h3
+  {
+    color: white;
+  }
+   
+
+h5 {
+  color: white;
+  text-align: center;
+ 
+  }
+
+h6
+{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+li
+{
+  color: white;
+}
+
+  
+p {
+  text-align: center;
+  }
+  
+
+/* Compétences */
+ /* Card */
+.card-content .card-title
+{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.card-reveal .card-title 
+{
+  font-family: fantasy;
+  text-align: center;
+}
+
+.card-reveal p
+{
+  font-family: fantasy;
+  color: white;
+ 
+}
+
+/* Expériences */
+
+.collapsible p
+{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Efface la séparation des formations pour les grandes tailles d'écran */
+@media (min-width: 991px) {
+  .training-separator-m {
+    display: none;
+  }
+}
